@@ -1,0 +1,47 @@
+<%- include ../partials/header.ejs %>
+
+<%- include ../partials/main_nav.ejs %>
+
+<!--- Content for Add page-->
+<div class="container">
+    <div class="row">
+        <div class="offset-md-3 col-md-6">
+        <h1><%= title %></h1>
+        <form class="form" method="POST">
+            <div class="form-group">
+                <lable for="nameTextField"> Name</lable>
+                <input type="text" class="form-control"
+                id="nameTextField"
+                placeholder="Enter contact name"
+                name="name" required>
+            </div>
+            <div class="form-group">
+                <lable for="authorTextField">Number</lable>
+                <input type="text" class="form-control"
+                id="authorTextField"
+                placeholder="Enter contact number"
+                name="author" required>
+            </div>
+            <div class="form-group">
+                <lable for="publishedTextField"> Email</lable>
+                <input type="text" class="form-control"
+                id="publishedTextField"
+                placeholder="Enter contact email"
+                name="published" required>
+            </div>
+            
+            
+            <button class="btn btn-primary" type="submit">
+               <i class="fas fa-edit">Submit </i>
+            </button>
+            <a href="/book-list" class="btn btn-warning"><i class="fas fa-undo"></i> Cancel</a>
+        </form>
+    </div>
+    </div>
+</div>
+
+
+<%- include ../partials/bottom_nav.ejs %>  
+
+<%- include ../partials/footer.ejs %>
+  
